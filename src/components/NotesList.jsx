@@ -1,22 +1,23 @@
+import React, { Component } from 'react';
 import Card from './Card';
+import './css/NotesList.css';
 
-function NotesList() {
-    return (
-        <ul>
+class NotesList extends Component {
+    render() { return (
+        <ul className="notesList">
             {
-                Array.of("Work", "Study").map((category) => {
+               this.props.notes.map((note, index) => {
                     return (
-                        <li>
-                            <div>{category}</div>
+                        <li key={index}>
+                            <div>{note}</div>
                             <Card />
                         </li>
                     );
                 })
             }
         </ul>
-      
-    );
+    )};
   }
   
-  export default NotesList;
+export default NotesList;
   

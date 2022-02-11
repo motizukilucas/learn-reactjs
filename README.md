@@ -4,6 +4,9 @@ Create a react.js project
 OBS: there's a bootstrap react library (it's a bit different from normal bootstrap)
 
 OBS: jsx is an extesion os js, however there are some limitations, for example a "for" won't work, you gotta do a array.map instead
+=> if you use a loop you must assign a "key" as a unique value to the generated elements
+
+OBS: you can create a folder and add inside it an index.js file to define the default output of that folder. React will standartly look for an index.js if you don't define the file it should look for.
 
 # Getting Started with Create React App
 
