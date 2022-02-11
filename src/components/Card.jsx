@@ -1,6 +1,9 @@
-function Card() {
+function Card(props) {
     return (
-      <p>Card</p>
+      <div>
+        <p>{props.title}</p>
+        <p>{props.content}</p>
+      </div>
     );
   }
   
